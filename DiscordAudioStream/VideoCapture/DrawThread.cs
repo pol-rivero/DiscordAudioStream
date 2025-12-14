@@ -13,7 +13,7 @@ public class DrawThread
     private readonly VideoCaptureManager captureSource;
 
     private readonly Stopwatch timeSinceLastFrame = new();
-    private const int TIME_TO_MINIMIZED_WARNING_MS = 500;
+    private const int TIME_TO_MINIMIZED_WARNING_MS = 5000;
 
     public bool Paused => !timeSinceLastFrame.IsRunning;
 
